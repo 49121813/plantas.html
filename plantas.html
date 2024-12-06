@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PLANTAS</title>
+    
+    <link href="menu.css" rel="stylesheet" type="text/css"/>
+    <link href="plantas.css" rel="stylesheet" type="text/css"/>
+    <link href="plantas2.css" rel="stylesheet" type="text/css"/>
+    <link href="plantasPanel.css" rel="stylesheet" type="text/css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Julius+Sans+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Julius+Sans+One&family=Kaisei+Decol&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Julius+Sans+One&family=Kaisei+Decol&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400..900&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Julius+Sans+One&family=Kaisei+Decol&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Reem+Kufi+Fun:wght@400..700&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <div class="todo">
+        <div class="arriba">
+            <div class="logo">ROOT-Y</div>
+            <div class="derecha">
+                <div class="descripcion">TU ASISTENTE DE JARDINERÍA VIRTUAL</div>
+                <nav>
+                    <p style="margin: 0;"><a href="inicio.html">INICIO</a></p>
+                    <p style="margin: 0;"><a href="" class="activo" onclick="event.preventDefault();">PLANTAS</a></p>
+                    <p style="margin: 0;"><a href="productos.html">PRODUCTOS</a></p>
+                    <p style="margin: 0;"><a href="contacto.html">NOSOTROS</a></p>
+                </nav>
+            </div>
+        </div>
+        
+        
+        <div class="azul">
+            <h1>MIS PLANTAS EN CRECIMIENTO</h1>
+            <div class="raya"></div>
+            <p>Mire el estado de tus plantas en vivo, para que tengan una vida más prolongada</p>
+        </div>
+
+        <div class="bloques"></div>
+        
+        <div id="masPlantas" class="hidden">
+            <h1 class="agrega">¡¡¡AGREGÁ UNA NUEVA PLANTA A TU COLECCIÓN!!!</h1>
+            <p class="sub-agrega">Cada planta necesita cuidados específicos, por eso es importante saber de cuál se trata.</p>
+            
+            <div class="medio">
+                <div class="desplegables">
+                    <div class="desplegable1">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Introduzca el nombre de su planta">
+                    </div>
+                    
+                    <div class="desplegable2">
+                        <label for="tipo">Tipo de planta:</label>
+                        <select id="tipo">
+                            <option value="1" disabled selected>Seleccione qué tipo de es</option>
+                            <option value="1">Aloe vera</option>
+                            <option value="1">Albahaca</option>
+                            <option value="1">Azalea</option>
+                            <option value="1">Bambú</option>
+                            <option value="1">Begonias</option>
+                            <option value="1">Cactus</option>
+                            <option value="1">Cineraria</option>
+                            <option value="1">Difenbaquia</option>
+                            <option value="1">Ficus</option>
+                            <option value="1">Fucsia</option>
+                            <option value="1">Hiedra</option>
+                            <option value="1">Lavanda</option>
+                            <option value="1">Lengua de suegra</option>
+                            <option value="1">Lirio de paz</option>
+                            <option value="1">Menta</option>
+                            <option value="1">Orquídeas</option>
+                            <option value="1">Planta jade</option>
+                            <option value="1">Potus</option>
+                            <option value="1">Romero</option>
+                            <option value="1">Suculenta</option>
+                            <option value="Solanum lycopersicum">Tomate</option>
+                            <option value="1">Violetas</option>
+                        </select> 
+                    </div>
+                </div>
+
+                <div class="asegura">
+                    <p>Antes de guardar asegurate de que:</p>
+                    <ul>
+                        <li>La maceta esté conectada a la PC</li>
+                        <li>Haya conexión Wifi </li>
+                        <li> Tu recipiente este con agua</li>
+                    </ul>
+                </div>
+            </div>
+
+            <button id="guardarBtn">GUARDAR Y CERRAR</button>
+            <button id="cancelarBtn">CANCELAR</button>
+        </div>
+
+        <div id="panel" class="hidden">
+            <button id="cerrarPanel">X</button>
+            <h1>¡TODO LISTO! ANALIZÁ TU PLANTA CON ROOT-Y</h1>
+            <div class="info">
+                <div class="anotador">
+                    <p class="titulo">HUMEDAD DE TU PLANTA</p>
+                    <div class="humedad">
+                        <p class="humedadPorciento" id="humedadPorciento">45%</p>
+                    </div>
+                    <div class="humedadBarra">
+                        <div id="humedadBarrita">
+                            <div class="humedadBtn"></div>
+                        </div>
+                    </div>
+                    <div class="humedadEsp">
+                        <p>0%</p>
+                        <p>100%</p>
+                    </div>
+                    <div class="humedadMsj">
+                        <p id="humedadMsj">¡Excelente! La Humedad está manteniendose dentro de los estándares recomendados.</p>
+                    </div>
+                </div>
+                <div class="anotador2">
+                    <p class="titulo">OTROS DATOS IMPORTANTES</p>
+                    
+                    <div class="temperatura">
+                        <div class="titulo-barra">
+                            <p>TEMPERATURA</p>
+                            <div class="tempBarra">
+                                <div id="tempBarrita"></div>
+                            </div>
+                            <div class="esp">
+                                <p>-10°C</p>
+                                <p>100°C</p>
+                            </div>
+                        </div>
+                        <div class="recuadro">
+                            <p id="tempPorciento">56°C</p>
+                        </div>
+                    </div>
+                    <div class="luz">
+                        <div class="recuadro">
+                            <p id="luzPorciento">23%</p>
+                        </div>
+                        <div class="titulo-barra">
+                            <p>LUZ</p>
+                            <div class="tempBarra">
+                                <div id="luzBarrita"></div>
+                            </div>
+                            <div class="humedadEsp">
+                                <p>0%</p>
+                                <p>100%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button id="riegoManual">RIEGO MANUAL POR <br>10 SEGUNDOS</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.4/socket.io.js"></script>
+    <script src="socket.js"></script>
+    <script src="plantas.js" type="module"></script>
+
+</body>
+</html>
